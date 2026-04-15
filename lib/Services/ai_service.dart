@@ -7,8 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AIService {
-  // static const String apiKey =
-  //     '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';
+
   static const String apiKey = String.fromEnvironment('GROQ_API_KEY', defaultValue: '');
   static const String apiUrl =
       'https://api.groq.com/openai/v1/chat/completions';
