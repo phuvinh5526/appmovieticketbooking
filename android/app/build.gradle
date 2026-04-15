@@ -1,0 +1,44 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services'
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.movieticketbooking"
+    compileSdk = 36
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.movieticketbooking"
+        minSdkVersion flutter.minSdkVersion // Tăng lên 21 để hỗ trợ MultiDex mặc định
+        targetSdk = 35
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        multiDexEnabled true // Bật MultiDex
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation "androidx.multidex:multidex:2.0.1"
+}

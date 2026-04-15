@@ -1,0 +1,35 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+// Cấu hình an toàn để sửa lỗi cho các plugin (path_provider, image_picker, v.v.)
+subprojects {
+    // Chỉ áp dụng afterEvaluate cho các module không phải là ":app" 
+    // để tránh lỗi "already evaluated"
+    if (project.name != "app") {
+        project.afterEvaluate {
+            if (project.hasProperty("android")) {
+                project.android {
+                    compileSdk 35
+                    buildToolsVersion "35.0.0"
+                }
+            }
+        }
+    }
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

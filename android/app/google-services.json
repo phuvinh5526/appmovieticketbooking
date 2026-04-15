@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "304656874782",
+    "project_id": "vinh-movie-cinema",
+    "storage_bucket": "vinh-movie-cinema.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304656874782:android:8fc48a0ffeb702f9169d0f",
+        "android_client_info": {
+          "package_name": "com.example.movieticketbooking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0hqZq9O9owjwoEIVrdofSH5172QCTfk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

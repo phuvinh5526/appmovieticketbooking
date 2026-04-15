@@ -1,0 +1,66 @@
+name: movieticketbooking
+description: "A new Flutter project."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  loop_page_view: ^1.2.5
+  carousel_slider: ^5.0.0
+  cached_network_image: ^3.3.1
+  video_player: ^2.9.3
+  url_launcher: ^6.3.1
+  intl: ^0.20.0
+  qr_flutter: ^4.1.0
+  provider: ^6.1.2
+  fl_chart: ^0.66.0
+  image_picker: 1.1.2
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.5
+  firebase_storage: ^12.4.4
+  firebase_messaging: ^15.2.4
+  firebase_analytics: ^11.4.4
+  firebase_app_check: ^0.3.2+4
+  mailer: ^6.1.0
+  http: ^1.1.0
+  crypto: ^3.0.3
+  youtube_player_flutter: ^9.1.1
+  flutter_inappwebview: ^6.1.5
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+  cloud_functions: ^5.3.4
+  qr: ^3.0.1
+  image: ^4.1.3
+  barcode_widget: ^2.0.4
+  string_similarity: ^2.1.1
+  flutter_launcher_icons: ^0.14.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/login.jpg
+    - assets/fonts/Roboto.ttf
+    - assets/icons/user.png
+    - assets/images/logo.png
+    - assets/icons/buyticket.png
+    - assets/icons/film.png
+    - assets/icons/sale.png
+    - assets/icons/theater.png
+    - assets/icons/myticket.png
+    - assets/images/bapnuoc.png
+    - assets/logo/MOVIE.png
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/MOVIE.png"
